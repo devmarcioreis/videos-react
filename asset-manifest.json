@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/videos-react/static/css/main.136fd109.css",
+    "main.js": "/videos-react/static/js/main.91a389a2.js",
+    "static/media/avatar.png": "/videos-react/static/media/avatar.3d99fc517bcc134873f6.png",
+    "static/media/video-logo.png": "/videos-react/static/media/video-logo.c48759171b27043b8f1c.png",
+    "index.html": "/videos-react/index.html",
+    "main.136fd109.css.map": "/videos-react/static/css/main.136fd109.css.map",
+    "main.91a389a2.js.map": "/videos-react/static/js/main.91a389a2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.136fd109.css",
+    "static/js/main.91a389a2.js"
+  ]
+}
