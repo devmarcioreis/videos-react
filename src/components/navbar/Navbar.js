@@ -34,26 +34,26 @@ function Navbar() {
           <div className='searchContainer'>
             <div className='searchBox'>
               <input type='text' placeholder='Buscar vídeo'  value={search} onChange={(e) => setSearch(e.target.value)} />
-              {search !== "" && <span className='material-symbols-rounded' onClick={() => setSearch("")}>
+              {search !== "" && <span onClick={() => setSearch("")}>
                 <TfiClose />
               </span>}
             </div>
             <div className='searchBtn'>
-              <span className='material-symbols-rounded'>
+              <span>
                 <FaSearch />
               </span>
             </div>
             <div className='searchMic'>
-              <span className='material-symbols-rounded active'>
+              <span>
                 <FaMicrophoneAlt />
               </span>
             </div>
           </div>
           <div className='profileContainer'>
-            <span className='material-symbols-rounded'>
+            <span>
                 <AiOutlinePlusSquare />
             </span>
-            <span className='material-symbols-rounded'>
+            <span>
                 <AiOutlineBell />
             </span>
             <img src={Avatar} alt='Avatar' title='Foto de peril' onClick={() => setOpenNav(!openNav)}/>
@@ -67,19 +67,19 @@ function Navbar() {
             <div className='horizontalLine'></div>
             <div className='profileTabs'>
               <div className='profileTab'>
-                <span className='material-symbols-rounded active'>
+                <span>
                   <BiUserCircle />
                 </span>
                 <p>Meu Canal</p>
               </div>
               <div className='profileTab'>
-                <span className='material-symbols-rounded active'>
+                <span>
                   <AiOutlinePlayCircle />
                 </span>
                 <p>Vídeo Studio</p>
               </div>
               <div className='profileTab'>
-                <span className='material-symbols-rounded active'>
+                <span>
                   <IoMdLogOut />
                 </span>
                 <p>Sair</p>
@@ -88,13 +88,13 @@ function Navbar() {
             <div className='horizontalLine'></div>
             <div className='profileTabs'>
               <div className='profileTab'>
-              <span className='material-symbols-rounded active'>
+              <span>
                   <AiOutlineDollarCircle />
               </span>
               <p>Compras e subscrições</p>
               </div>
               <div className='profileTab'>
-              <span className='material-symbols-rounded active'>
+              <span>
                   <RiAdminLine />
               </span>
               <p>Seus dados</p>
@@ -103,13 +103,13 @@ function Navbar() {
             <div className='horizontalLine'></div>
             <div className='profileTabs'>
               <div className='profileTab'>
-              <span className='material-symbols-rounded active'>
+              <span>
                  <MdOutlineAdminPanelSettings />
               </span>
               <p>Modo Restrito</p>
               </div>
               <div className='profileTab'>
-              <span className='material-symbols-rounded active'>
+              <span>
                   <FaGlobeAmericas />
               </span>
               <p>Localização</p>
@@ -118,7 +118,7 @@ function Navbar() {
             <div className='horizontalLine'></div>
             <div className='profileTabs'>
               <div className='profileTab'>
-              <span className='material-symbols-rounded active'>
+              <span>
                  <AiOutlineSetting />
               </span>
               <p>Configurações</p>
@@ -127,13 +127,13 @@ function Navbar() {
             <div className='horizontalLine'></div>
             <div className='profileTabs'>
               <div className='profileTab'>
-              <span className='material-symbols-rounded active'>
+              <span>
                  <MdOutlineHelpOutline />
               </span>
               <p>Ajuda</p>
               </div>
               <div className='profileTab'>
-              <span className='material-symbols-rounded active'>
+              <span>
                   <RiFeedbackLine />
               </span>
               <p>Enviar feedback</p>

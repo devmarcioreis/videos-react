@@ -28,10 +28,24 @@ body {
     color: var(--text-main);
     font-weight: 200;
 }
+  
 .material-symbols-rounded.active {
     font-variation-settings: 
     'FILL' 1,
     'wght' 300,
     'GRAD' 0,
     'opsz' 48;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+  
+::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: var(--secondary-light-color);
+    border-radius: 6px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: var(--primary-color);
 }
