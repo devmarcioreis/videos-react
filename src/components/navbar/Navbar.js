@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './navbar.css'
 import { WhiteLogo } from '../../assets/ImageIndex'
 import { Avatar } from '../../assets/ImageIndex'
@@ -12,6 +12,10 @@ import { MdOutlineAdminPanelSettings, MdOutlineHelpOutline } from 'react-icons/m
 
 
 function Navbar() {
+
+  const [openNav, setOpenNav] = useState(false)
+  const [search, setSearch] = useState("")
+
   return (
     <>
       <header>
@@ -29,10 +33,10 @@ function Navbar() {
           </div>
           <div className='searchContainer'>
             <div className='searchBox'>
-              <input type='text' placeholder='Buscar vídeo' />
-              <span className='material-symbols-rounded'>
+              <input type='text' placeholder='Buscar vídeo'  value={search} onChange={(e) => setSearch(e.target.value)} />
+              {search !== "" && <span className='material-symbols-rounded' onClick={() => setSearch("")}>
                 <TfiClose />
-              </span>
+              </span>}
             </div>
             <div className='searchBtn'>
               <span className='material-symbols-rounded'>
@@ -52,10 +56,10 @@ function Navbar() {
             <span className='material-symbols-rounded'>
                 <AiOutlineBell />
             </span>
-            <img src={Avatar} alt='Avatar' title='Foto de peril' />
+            <img src={Avatar} alt='Avatar' title='Foto de peril' onClick={() => setOpenNav(!openNav)}/>
           </div>
         </div>
-        <div className='profileBtns'>
+        {openNav && <div className='profileBtns'>
             <div className='avatarInfo profileTab'>
               <img src={Avatar} alt='Avatar' title='Foto de peril' />
               <p>Márcio Reis</p>
@@ -135,7 +139,7 @@ function Navbar() {
               <p>Enviar feedback</p>
               </div>
             </div>
-          </div>
+          </div>}
       </header>
     </>
   )
