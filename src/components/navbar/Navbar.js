@@ -16,13 +16,18 @@ function Navbar() {
   const [openNav, setOpenNav] = useState(false)
   const [search, setSearch] = useState("")
 
+  const handleSidebar = ()=>{
+    const sidebarContainer = document.getElementById('sidebarContainer');
+    sidebarContainer.classList.toggle('close')
+}
+
   return (
     <>
       <header>
         <div className='header'>
           <div>
             <div className='hamburger'>
-              <div>
+            <div onClick={handleSidebar}>
                 <span></span>
                 <span></span>
                 <span></span>
