@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/videos-react/static/css/main.a1d08b96.css",
-    "main.js": "/videos-react/static/js/main.63f0b3b2.js",
+    "main.css": "/videos-react/static/css/main.a6986bec.css",
+    "main.js": "/videos-react/static/js/main.ce4ef16a.js",
     "static/media/avatar.png": "/videos-react/static/media/avatar.3d99fc517bcc134873f6.png",
+    "static/media/videoImage.png": "/videos-react/static/media/videoImage.4e8ddfd327cdbff04c2e.png",
     "static/media/youtubeBanner.png": "/videos-react/static/media/youtubeBanner.e6485396819d098ff6ca.png",
     "static/media/video-logo.png": "/videos-react/static/media/video-logo.c48759171b27043b8f1c.png",
     "index.html": "/videos-react/index.html",
-    "main.a1d08b96.css.map": "/videos-react/static/css/main.a1d08b96.css.map",
-    "main.63f0b3b2.js.map": "/videos-react/static/js/main.63f0b3b2.js.map"
+    "main.a6986bec.css.map": "/videos-react/static/css/main.a6986bec.css.map",
+    "main.ce4ef16a.js.map": "/videos-react/static/js/main.ce4ef16a.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1d08b96.css",
-    "static/js/main.63f0b3b2.js"
+    "static/css/main.a6986bec.css",
+    "static/js/main.ce4ef16a.js"
   ]
 }
