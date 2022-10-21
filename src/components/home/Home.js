@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './home.css'
 import { AdBanner, WhiteLogo } from '../../assets/ImageIndex'
+import Video from './Video'
+import VideoData from './Videos.json'
 
 
 
@@ -9,6 +11,7 @@ const Home = () => {
   const categoryData = ["Todos", "Games", "Músicas", "Lives", "Comédia", "Politíca", "Esportes", "TV", "Clássicos"]
 
   const [category, setCategory] = useState("Todos")
+  const { videos } = VideoData
 
   return (
     <>
@@ -29,7 +32,11 @@ const Home = () => {
             <button>Ver agora</button>
           </div>
         </div>
-        
+        <div className="videoContainer">
+          {videos.map((video)=>{
+            return <Video video={video} key={video.image}/>
+          })}
+        </div>
       </div>
     </>
   )
