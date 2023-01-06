@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 Este projeto não foi finalizado, o mesmo serviu como treinamento em React.<br>
+Consumindo API e realizando testes com ReactJS.<br>
 https://devmarcioreis.github.io/videos-react/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
